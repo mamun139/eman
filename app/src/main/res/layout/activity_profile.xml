@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3f51b5"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#f5f6f9"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Edit Profile"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="8dp">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgUserProfile"
+            android:src="@drawable/user_profile"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="20dp"
+       android:text="First Name"
+       android:textSize="16dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/etFirstName"
+            android:text="Mamun"
+            android:textSize="20dp"
+            android:paddingTop="5dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorBasic"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="Surname"
+            android:textSize="16dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/etSurName"
+            android:text="Rashid"
+            android:textSize="20dp"
+            android:paddingTop="5dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorBasic"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="Phone Number"
+            android:textSize="16dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/etPhoneNumber"
+            android:text="01677872715"
+            android:textSize="20dp"
+            android:paddingTop="5dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorBasic"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="Email Address"
+            android:textSize="16dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/etEmailId"
+            android:text="mamun.mur@gmail.com"
+            android:background="@android:color/transparent"
+            android:textSize="20dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorBasic"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textSize="16dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/etPassword"
+            android:text="********"
+            android:background="@android:color/transparent"
+            android:textSize="20dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorBasic"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnProfileSave"
+            android:layout_marginTop="@dimen/button_margin"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
+            android:layout_marginStart="@dimen/button_margin"
+            android:background="@drawable/shape_round"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="save"
+            />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

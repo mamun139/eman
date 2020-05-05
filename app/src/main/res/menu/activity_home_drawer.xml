@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/track"
+            android:icon="@drawable/track"
+            android:title="Track"/>
+    </group>
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="none">
+    <item
+            android:id="@+id/orderhistory"
+            android:icon="@drawable/order_history"
+            android:title="Order History"/>
+    </group>
+
+    <group
+        android:id="@+id/grp3"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/discount"
+            android:icon="@drawable/discount"
+            android:title="Promo Code"
+            />
+    </group>
+
+    <group
+        android:id="@+id/grp4"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/legal"
+            android:title="Logout"/>
+    </group>
+
+</menu>

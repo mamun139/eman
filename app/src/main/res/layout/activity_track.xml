@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.jarvishub.emandemo.ui.track.OrderTrack"
+    >
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:padding="5dp"
+    android:layout_margin="@dimen/card_items_margin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:background="@drawable/border_style"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:text="Collection:" />
+
+    <TextView
+        android:id="@+id/tvCollectionZone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorBasic"
+        android:padding="5dp"
+        android:text="" />
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@drawable/border_style"
+                >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:text="Delivery:"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBasic"
+                    android:id="@+id/tvDeliveryZone"
+                    android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_style"
+            android:padding="5dp"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Collection Date:"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvCollectionDate"
+                android:textColor="@color/colorBasic"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/card_items_margin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:weightSum="7">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnReadytoCollection1"
+                        android:layout_width="@dimen/progress_button_height"
+                        android:layout_height="@dimen/progress_button_width"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/btnorder"
+                        android:background="@drawable/round_button" />
+
+                    <Button
+                        android:id="@+id/btnReadytoCollection"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/confirmation"
+                        android:drawableRight="@drawable/round_button"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/tvReadytoCollection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:text="Ready for collection"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/pbOntheWaytoCollection"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/progressbar_margin_left"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/myprogressbar" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnOntheWaytoCollection1"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/btnorder"
+                        android:background="@drawable/round_button" />
+
+                    <Button
+                        android:id="@+id/btnOntheWaytoCollection"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/confirmation"
+                        android:drawableRight="@drawable/round_button"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/tvOntheWaytoCollection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:text="On the way to collection"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/pbArrivedatCollectionPoint"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/myprogressbar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnArrivedatCollectionPoint1"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/round_button" />
+
+                    <Button
+                        android:id="@+id/btnArrivedatCollectionPoint"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/confirmation"
+                        android:drawableRight="@drawable/round_button"
+                        android:visibility="gone" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvArrivedatCollectionPoint"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:text="Arrived at collection point"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/pbParcelCollected"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/progressbar_margin_left"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/myprogressbar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnParcelCollected1"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/round_button" />
+
+                    <Button
+                        android:id="@+id/btnParcelCollected"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/confirmation"
+                        android:drawableRight="@drawable/round_button"
+                        android:visibility="gone" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvParcelCollected"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Parcel collected"
+
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/pbPaymentCollected"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/progressbar_margin_left"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/myprogressbar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnPaymentCollected1"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/round_button" />
+
+                    <Button
+                        android:id="@+id/btnPaymentCollected"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/confirmation"
+                        android:drawableRight="@drawable/round_button"
+                        android:visibility="gone" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvPaymentCollected"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:text="Payment collected"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/pbOnTheWaytoDepositHub"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/progressbar_margin_left"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/myprogressbar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnOnTheWaytoDepositHub1"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/round_button" />
+
+                    <Button
+                        android:id="@+id/btnOnTheWaytoDepositHub"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/confirmation"
+                        android:drawableRight="@drawable/round_button"
+                        android:visibility="gone" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvOnTheWaytoDepositHub"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="On the way to deposit hub"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/pbParcelDeposited"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/progressbar_margin_left"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/myprogressbar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnParcelDeposited1"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/round_button" />
+
+                    <Button
+                        android:id="@+id/btnParcelDeposited"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/confirmation"
+                        android:drawableRight="@drawable/round_button"
+                        android:visibility="gone" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvParcelDeposited"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Parcel deposited"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/pbInTransit"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_width="3dp"
+                    android:layout_marginLeft="@dimen/progressbar_margin_left"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/myprogressbar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnInTransit1"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/round_button" />
+
+                    <Button
+                        android:id="@+id/btnInTransit"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/confirmation"
+                        android:drawableRight="@drawable/round_button"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvInTransit"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="In transit"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+                <ProgressBar
+                    android:id="@+id/pbPickedupForDelivery"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_width="3dp"
+                    android:layout_marginLeft="@dimen/progressbar_margin_left"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/myprogressbar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnPickedupForDelivery1"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/btnorder"
+                        android:background="@drawable/round_button" />
+
+                    <Button
+                        android:id="@+id/btnPickedupForDelivery"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/confirmation"
+                        android:drawableRight="@drawable/round_button"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/tvPickedupForDelivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:text="Picked up for delivery"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+                <ProgressBar
+                    android:id="@+id/pbArrivedatdelivery"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_width="3dp"
+                    android:layout_marginLeft="@dimen/progressbar_margin_left"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/myprogressbar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnArrivedatdelivery1"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/btnorder"
+                        android:background="@drawable/round_button" />
+
+                    <Button
+                        android:id="@+id/btnArrivedatdelivery"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/confirmation"
+                        android:drawableRight="@drawable/round_button"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/tvArrivedatdelivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:text="Arrived at delivery"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+                <ProgressBar
+                    android:id="@+id/pbDelivered"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_width="3dp"
+                    android:layout_marginLeft="@dimen/progressbar_margin_left"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/myprogressbar" />
+
+                   <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnDelivered1"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/btnorder"
+                        android:background="@drawable/round_button" />
+
+                    <Button
+                        android:id="@+id/btnDelivered"
+                        android:layout_width="@dimen/progress_button_width"
+                        android:layout_height="@dimen/progress_button_height"
+                        android:background="@drawable/confirmation"
+                        android:drawableRight="@drawable/round_button"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/tvDelivered"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="3dp"
+                        android:text="Delivered"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+</LinearLayout>
