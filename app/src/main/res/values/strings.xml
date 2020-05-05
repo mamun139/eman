@@ -1,4 +1,5 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">eMan</string>
     <string name="title_activity_login">Sign in</string>
     <!-- Strings related to login -->
@@ -128,4 +129,23 @@
     <string name="join_eman">Join eMan</string>
     <string name="profile">Profile</string>
     <string name="legal">Legal</string>
+=======
+    <string name="app_name">EMan</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="create_account">No account yet? Create one</string>
+    <string name="forget_password">Forget Password?</string>
+
+>>>>>>> f1d7c6981594caf14c33c68db026f5559201bbf9
 </resources>

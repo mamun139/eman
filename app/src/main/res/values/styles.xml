@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+<<<<<<< HEAD
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -54,4 +55,6 @@
         <item name="android:maxWidth">12dip</item>
     </style>
 
+=======
+>>>>>>> f1d7c6981594caf14c33c68db026f5559201bbf9
 </resources>
